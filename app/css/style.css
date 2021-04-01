@@ -16,19 +16,30 @@ body{
 }
 
 .forca-image{
-   width: 400px;
+   width: 250px;
    transform: translateX(-50%);
    left: 50%;
    position: relative;
 }
 
 .forca-item-grupo{
+   width: 100%;
    display: grid;
    grid-template-columns: 11% 11% 11% 11% 11% 11% 11% 11%;
-   grid-gap: 7px;
+   grid-gap: 8px;
    position: relative;
    transform: translateX(-50%);
    left: 50%;
+   margin-bottom: 30px;
+}
+
+.forca-item-letra{
+   width: 90%;
+   display: grid;
+   grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+   grid-gap: 5px;
+   position: relative;
+   
 }
 
 .forca-item{
@@ -40,4 +51,38 @@ body{
     padding: 10px 0px;
     text-align: center;
     background: #fff;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+.forca-item2{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    border: 0 none;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    padding: 5px 0px;
+    text-align: center;
+    background: #77b300;
+    color: #fff;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+.forca-item-hover:hover{
+    filter: brightness(90%);
+}
+
+.forca-item-hover:active{
+    filter: brightness(95%);
 }
